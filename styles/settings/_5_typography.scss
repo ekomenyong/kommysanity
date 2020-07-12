@@ -1,0 +1,88 @@
+// Default Font Family
+$fontBody: neue-haas-grotesk-display, sans-serif;
+$fontHeading: neue-haas-grotesk-display, sans-serif;
+
+// Links
+$linkColor: $white !default;
+$linkColor-hover: $grey !default;
+
+$textColor: $grey;
+$textColor-light: $grey;
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  font-weight: 700;
+  font-family: $fontHeading;
+  color: $white;
+}
+
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 22px;
+}
+
+// General Typography Settings
+p {
+  color: $textColor;
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+a {
+  position: relative;
+  color: $linkColor;
+  cursor: pointer;
+  transition: $speed;
+  text-decoration: underline;
+  padding-bottom: 2px;
+  font-weight: 500;
+  &:hover {
+    color: $linkColor-hover;
+  }
+}
+
+// Lists
+ol {
+  list-style-position: inside;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  & li {
+    padding: 0.5rem 2rem;
+  }
+}
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  & li {
+    padding: 0.5rem 2rem;
+  }
+}
+.card-meta {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.section-title {
+  font-size: 40px;
+}

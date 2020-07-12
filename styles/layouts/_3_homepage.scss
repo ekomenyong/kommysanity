@@ -1,0 +1,89 @@
+.site-layout {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .about,
+    .post-grid {
+      flex-basis: 50%;
+      margin-bottom: 40px;
+      @include breakpoint("tablet") {
+        margin-bottom: 100px;
+      }
+    }
+    .about {
+      position: relative;
+      .page-title {
+        font-size: 72px;
+        color: $white;
+      }
+      .description {
+        max-width: 75%;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      @include breakpoint("tablet") {
+        position: sticky;
+        top: 100px;
+      }
+    }
+    .post-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .post-card {
+        background: $darkAccent;
+        padding: 24px 24px;
+        margin: 8px 0;
+        width: 100%;
+        transition: $speed;
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+          .post-image img {
+            filter: grayscale(0);
+          }
+          .category {
+            color: $white;
+          }
+        }
+        .post-image {
+          display: inline-block;
+          padding-bottom: 12px;
+          img {
+            object-fit: cover;
+            max-height: 280px;
+            width: 100%;
+            filter: grayscale(1);
+            transition: $speed;
+          }
+        }
+        .date {
+          color: $white;
+        }
+        .category,
+        .date {
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+        .post-title {
+          font-size: 32px;
+          line-height: 32px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    @include breakpoint("tablet") {
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  }
+  @include breakpoint("tablet") {
+    width: 90%;
+  }
+}

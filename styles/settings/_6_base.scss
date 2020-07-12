@@ -1,0 +1,103 @@
+$fontSize-body: 16px !default;
+$body-rendering: optimizeLegibility !default;
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+html,
+body {
+  background: $backgroundColor;
+  font-size: $fontSize-body;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: $body-rendering;
+  text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+  display: block;
+  scroll-behavior: smooth;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+section {
+  display: block;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: $fontBody;
+}
+
+embed,
+iframe,
+img,
+object,
+video {
+  max-width: 100%;
+}
+
+body {
+  color: $textColor;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: baseline;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// Container Styles
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  @include breakpoint("tablet") {
+    .container {
+      width: 100%;
+    }
+  }
+}
+blockquote {
+  font-size: 1.4em;
+  width: 60%;
+  margin: 50px auto;
+  font-style: italic;
+  color: $white;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid $grey;
+  font-weight: 500;
+  line-height: 1.6;
+  position: relative;
+  background: $darkAccent;
+  &:before {
+    content: "\201C";
+    color: $grey;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+  }
+  &:after {
+    content: "";
+  }
+}
