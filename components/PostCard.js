@@ -13,7 +13,7 @@ export default function PostCard({
       <div className="post-card">
         <p className="category">{category}</p>
         <div className="post-image">
-          <img src={`${imageUrl}`} alt={`Cover Image for ${title}`} />
+          <img src={imageUrl} alt={`Cover Image for ${title}`} />
         </div>
         <h1 className="post-title">{title}</h1>
         <p className="excerpt">{excerpt}</p>

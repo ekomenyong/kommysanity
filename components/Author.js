@@ -1,8 +1,13 @@
 
-export default function Author({ author }) {
+export default function Author({ author, image }) {
   return (
-    <p className="author-byline">
-      Written by: <span className="author-name">{author}</span>
-    </p>
+    <div className="author">
+      <div className="author-img">
+        <img src={image} alt={`${author}'s Author Image`} />
+      </div>
+      <p className="author-byline">
+        <span className="author-name">{author}</span>&nbsp;&mdash;&nbsp;
+      </p>
+    </div>
   );
 };

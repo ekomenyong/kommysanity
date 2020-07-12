@@ -41,8 +41,10 @@ export default function Post({ post, preview }) {
       <div className="single-post">
         <PostHeader
           title={post.title}
+          subtitle={post.subtitle}
           date={moment(post.date).format('MMM D, YYYY')}
           author={post.author}
+          imageUrl={post.featImage}
         />
         <div className="content container">
           <PostBody content={post.body} />

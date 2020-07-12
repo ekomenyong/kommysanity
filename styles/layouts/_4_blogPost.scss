@@ -2,25 +2,48 @@
   color: $white;
   margin-bottom: 4px;
 }
-.author-byline {
-  color: $grey;
-  margin-bottom: 4px;
-  font-weight: 500;
-  .author-name {
-    color: $white;
+.post-info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 24px;
+  .author {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    .author-byline {
+      font-size: 18px;
+      color: $white;
+      margin-bottom: 0;
+      font-weight: 600;
+      .author-name {
+        color: $grey;
+      }
+    }
+    .author-img img {
+      height: 40px;
+      margin-right: 8px;
+    }
   }
 }
 .date {
+  display: inline-block;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   color: $white;
+  &.sp {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
 }
 .content.container {
   .post-content {
     p,
     li {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: 500;
       line-height: 1.5;
     }
@@ -37,9 +60,23 @@ pre {
   padding: 24px;
   background: $grey;
   color: $darkAccent;
+  font-size: 20px;
+  white-space: pre-wrap;
 }
 
 .single-post {
-  margin: 80px auto;
-  padding: 60px 0;
+  padding-bottom: 60px;
+}
+
+.single-post-image {
+  display: none;
+  padding-bottom: 40px;
+  img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 500px;
+  }
+  @include breakpoint("tablet") {
+    display: block;
+  }
 }
