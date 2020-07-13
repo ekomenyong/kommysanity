@@ -9,6 +9,10 @@
     padding-bottom: 30px;
     .header-img {
       width: 48px;
+      &:hover {
+        cursor: pointer;
+        animation: jelly 0.5s;
+      }
     }
     @include breakpoint("tablet") {
       padding-bottom: 0;
@@ -23,6 +27,7 @@
       font-size: 22px;
       color: $white;
       text-decoration: none;
+      transition: 440ms;
       &:last-child {
         padding-right: 0;
       }

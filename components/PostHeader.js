@@ -1,3 +1,5 @@
+import imageUrlFor from 'lib/imageUrlFor';
+
 import Author from './Author';
 import PostTitle from './PostTitle';
 
@@ -15,7 +17,7 @@ export default function PostHeader({ title, subtitle, date, author, category, im
         <p className="post-subtitle">{subtitle}</p>
       </div>
       <div className="single-post-image">
-        <img src={imageUrl} width="100%" alt={`Cover Image for ${title}`} />
+        <img src={imageUrlFor(imageUrl).width(900).height(400).fit('crop').url()} alt={`Cover Image for ${title}`} />
       </div>
       <hr className="post-hr" />
     </div>

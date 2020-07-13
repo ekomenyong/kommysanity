@@ -3,6 +3,7 @@ import moment from 'moment';
 import { getAllBlogsForHome } from 'lib/api';
 
 import Layout from 'components/Layout';
+import About from 'components/About';
 import PostCard from 'components/PostCard';
 
 export async function getStaticProps({ preview = false }) {
@@ -18,7 +19,7 @@ export default function Home({ post }) {
       <div className="homepage">
         <div className="about">
           <h1 className="title">
-            What it do babybeee?
+            <About />
           </h1>
         </div>
         <div className="post-grid">

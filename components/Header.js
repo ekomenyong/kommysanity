@@ -8,7 +8,7 @@ export default function Header() {
           <Link href="/"><a><img className="header-img" src="https://res.cloudinary.com/ekomenyong/image/upload/v1590164993/headshot-circle-330x330_zgtfak.png" alt="Ekom Enyong" /></a></Link>
         </div>
         <nav className="nav-menu">
-          <a href="mailto:ekom.enyong@gmail.com" className="menu-item">contact</a>
+          <a href="mailto:ekom.enyong@gmail.com" className="menu-item">let's talk.</a>
         </nav>
       </div>
     </header>

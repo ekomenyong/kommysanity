@@ -66,13 +66,26 @@
       margin-top: 24px;
     }
     .code-filename {
-      padding: 12px 24px;
+      padding: 8px 24px;
       font-weight: 600;
       font-family: monospace;
       background: $white;
       color: $darkAccent;
       border-radius: 0 0 $radius-small $radius-small;
       margin-bottom: 24px;
+    }
+    .post-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .img-caption {
+        color: $white;
+        font-size: 16px;
+        text-align: center;
+        padding: 8px 16px;
+        font-style: italic;
+      }
     }
   }
 }

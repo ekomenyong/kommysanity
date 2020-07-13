@@ -17,6 +17,12 @@
       padding-right: 32px;
       text-decoration: none;
       font-weight: 600;
+      font-size: 18px;
+      color: $white;
+      transition: 440ms;
+      &:hover {
+        color: $primaryColor;
+      }
       .headshot-img {
         width: 60px;
         height: auto;
@@ -35,8 +41,12 @@
       font-weight: 700;
     }
   }
+  .copyright-text {
+    font-size: 18px;
+  }
   @include breakpoint("tablet") {
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
