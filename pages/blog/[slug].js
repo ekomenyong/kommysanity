@@ -45,6 +45,7 @@ export default function Post({ post, preview }) {
           date={moment(post.date).format('MMM D, YYYY')}
           author={post.author}
           imageUrl={post.featImage}
+          category={post.category.name}
         />
         <div className="content container">
           <PostBody content={post.body} />

@@ -90,7 +90,7 @@ blockquote {
   position: relative;
   background: $darkAccent;
   @include breakpoint("tablet") {
-    width: 60%;
+    width: 65%;
   }
   &:before {
     content: "\201C";
