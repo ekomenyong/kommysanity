@@ -30,9 +30,9 @@ export default function Post({ post, preview }) {
             <NextSeo
               title={`${post.title} | Ekom Enyong » Digital Creator`}
               description={post.excerpt}
-              canonical={`http://localhost:3000/blog/${post.slug}`}
+              canonical={`https://ekomenyong.com/blog/${post.slug}`}
               openGraph={{
-                url: `http://localhost:3000/blog/${post.slug}`,
+                url: `https://ekomenyong.com/blog/${post.slug}`,
                 title: `${post.title} | Ekom Enyong » Digital Creator`,
                 description: `${post.excerpt}`,
                 images: [
@@ -46,7 +46,7 @@ export default function Post({ post, preview }) {
               }}
             />
             <BlogJsonLd
-              url={`http://localhost:3000/blog/${post.slug}`}
+              url={`https://ekomenyong.com/blog/${post.slug}`}
               title={`${post.title} | Ekom Enyong » Digital Creator`}
               description={`${post.excerpt}`}
               images={[
