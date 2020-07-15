@@ -81,9 +81,9 @@ function buildRss(pageFiles, pagesDir) {
     }
   );
   rssData.items.sort(byDateDesc);
-  // write to the output public folder
+  // write to the output static folder
   fs.writeFileSync(
-    path.join('./.next/public', 'feed.json'),
+    path.join('./.next/static', 'feed.json'),
     JSON.stringify(rssData, null, 2)
   );
 }
@@ -116,8 +116,8 @@ function buildSiteMap(pageFiles) {
       .join('')}
 </urlset>
 `;
-  // write to the output public folder
-  fs.writeFileSync(path.join('./.next/public', 'sitemap.xml'), sitemap);
+  // write to the output static folder
+  fs.writeFileSync(path.join('./.next/static', 'sitemap.xml'), sitemap);
 }
 
 function getBuildId() {
@@ -129,7 +129,7 @@ function main() {
   let pagesDir = './.next/serverless/pages';
   if (!fs.existsSync(pagesDir)) {
     // 'pages' location in local environment
-    pagesDir = `./.next/server/public/${getBuildId()}/pages`;
+    pagesDir = `./.next/server/static/${getBuildId()}/pages`;
   }
   const pageFiles = getPageFiles(pagesDir);
   buildRss(pageFiles, pagesDir);

@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
+
 import moment from 'moment';
+
 import { NextSeo } from 'next-seo';
 import { BlogJsonLd } from 'next-seo';
 
@@ -26,12 +28,12 @@ export default function Post({ post, preview }) {
       ) : (
           <>
             <NextSeo
-              title={`${seoTitle}`}
+              title={`${post.title} | Ekom Enyong » Digital Creator`}
               description={post.excerpt}
               canonical={`http://localhost:3000/blog/${post.slug}`}
               openGraph={{
                 url: `http://localhost:3000/blog/${post.slug}`,
-                title: `${seoTitle}`,
+                title: `${post.title} | Ekom Enyong » Digital Creator`,
                 description: `${post.excerpt}`,
                 images: [
                   {
@@ -45,7 +47,7 @@ export default function Post({ post, preview }) {
             />
             <BlogJsonLd
               url={`http://localhost:3000/blog/${post.slug}`}
-              title={`${seoTitle}`}
+              title={`${post.title} | Ekom Enyong » Digital Creator`}
               description={`${post.excerpt}`}
               images={[
                 `${post.featImage}`,
@@ -91,6 +93,6 @@ export async function getStaticPaths() {
           slug: post.slug,
         },
       })) || [],
-    fallback: true,
+    fallback: false,
   };
 }

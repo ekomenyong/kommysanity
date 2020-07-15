@@ -9,7 +9,10 @@ import PostCard from 'components/PostCard';
 export async function getStaticProps({ preview = false }) {
   const data = await getAllBlogsForHome(preview);
   return {
-    props: { preview, post: data },
+    props: {
+      preview,
+      post: data
+    },
   };
 }
 
