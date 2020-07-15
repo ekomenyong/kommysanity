@@ -2,7 +2,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 import BlockContent from '@sanity/block-content-to-react';
-import imageUrlFor from 'components/lib/imageUrlFor';
+import imageUrlFor from 'lib/imageUrlFor';
 
 export default function PostBody({ content }) {
   const serializers = {

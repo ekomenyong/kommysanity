@@ -31,6 +31,7 @@
         letter-spacing: 0.1px;
         @include breakpoint("tablet") {
           max-width: 75%;
+          font-size: 24px;
         }
       }
       @include breakpoint("tablet") {

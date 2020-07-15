@@ -1,16 +1,18 @@
 {
   "name": "frontend",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "node ./scripts/postbuild"
   },
   "dependencies": {
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^1.149.16",
     "@sanity/image-url": "^0.140.19",
+    "cheerio": "^1.0.0-rc.3",
     "moment": "^2.27.0",
     "next": "9.4.4",
     "next-compose-plugins": "^2.2.0",

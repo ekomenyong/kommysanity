@@ -1,0 +1,7 @@
+{
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/_next/public/sitemap.xml" },
+    { "src": "/feed.json", "dest": "/_next/public/feed.json" }
+  ],
+  "trailingSlash": true
+}

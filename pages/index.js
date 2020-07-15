@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-import { getAllBlogsForHome } from 'components/lib/api';
+import { getAllBlogsForHome } from 'lib/api';
 
 import Layout from 'components/Layout';
 import About from 'components/About';

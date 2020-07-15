@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import imageUrlFor from 'components/lib/imageUrlFor';
+import imageUrlFor from 'lib/imageUrlFor';
 
 export default function PostCard({
   slug,

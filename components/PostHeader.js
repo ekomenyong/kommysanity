@@ -1,4 +1,4 @@
-import imageUrlFor from 'components/lib/imageUrlFor';
+import imageUrlFor from 'lib/imageUrlFor';
 
 import Author from './Author';
 import PostTitle from './PostTitle';

@@ -1,4 +1,4 @@
-import { getAllPostsWithSlug } from 'components/lib/api';
+import { getAllPostsWithSlug } from 'lib/api';
 
 export default async function enablePreview(req, res) {
 
