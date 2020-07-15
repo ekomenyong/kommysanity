@@ -1,5 +1,4 @@
 import client, { previewClient } from './sanity';
-import imageUrlBuilder from '@sanity/image-url';
 
 // Default post fields
 const postFields = `
@@ -17,12 +16,8 @@ const postFields = `
   'category': category-> { name },
 `;
 
-const builder = imageUrlBuilder(client);
 const getClient = preview => preview ? previewClient : client;
 
-export async function urlFor(source) {
-  return builder.image(source);
-}
 
 
 // Filter through posts to to make sure they
@@ -65,6 +60,7 @@ export async function getPostBySlug(slug, preview) {
   const data = await currentClient
     .fetch(`*[_type == "post" && slug.current == $slug] {
       ${postFields}
+      _updatedAt,
       body[]{
         ...,
         "asset": asset->,

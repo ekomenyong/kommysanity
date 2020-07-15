@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import imageUrlFor from 'lib/imageUrlFor';
+import imageUrlFor from 'components/lib/imageUrlFor';
 
 export default function PostCard({
   slug,
@@ -14,7 +14,7 @@ export default function PostCard({
       <a><div className="post-card">
         <p className="category">{category}</p>
         <div className="post-image">
-          <img src={imageUrlFor(imageUrl).width(600).height(300).fit('crop').url()} alt={`Cover Image for ${title}`} />
+          <img src={imageUrlFor(imageUrl).width(600).height(360).fit('crop').url()} alt={`Cover Image for ${title}`} />
         </div>
         <h1 className="post-title">{title}</h1>
         <p className="excerpt">{excerpt}</p>

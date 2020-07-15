@@ -3,15 +3,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
-  margin-bottom: 40px;
+  padding: 24px 0;
   .site-branding {
-    padding-bottom: 30px;
-    .header-img {
-      width: 48px;
-      &:hover {
-        cursor: pointer;
-        animation: jelly 0.5s;
+    padding-bottom: 16px;
+    a.home-link {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-decoration: none;
+      .name {
+        display: inline-block;
+        @include breakpoint("tablet") {
+          display: none;
+        }
+      }
+      .header-img {
+        width: 48px;
+        padding-bottom: 16px;
+        @include breakpoint("tablet") {
+          padding-bottom: 0;
+        }
+        &:hover {
+          cursor: pointer;
+          animation: jelly 0.5s;
+        }
       }
     }
     @include breakpoint("tablet") {
@@ -21,7 +37,6 @@
   .nav-menu {
     .menu-item {
       padding-right: 32px;
-      text-transform: lowercase;
       font-family: $fontBody;
       font-weight: 600;
       font-size: 22px;
@@ -40,4 +55,10 @@
     flex-flow: row nowrap;
     justify-content: space-between;
   }
+  @include breakpoint("tablet") {
+    margin-bottom: 40px;
+  }
+}
+.header-hr {
+  margin-bottom: 40px;
 }

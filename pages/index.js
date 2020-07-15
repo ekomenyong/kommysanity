@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-import { getAllBlogsForHome } from 'lib/api';
+import { getAllBlogsForHome } from 'components/lib/api';
 
 import Layout from 'components/Layout';
 import About from 'components/About';
@@ -18,9 +18,9 @@ export default function Home({ post }) {
     <Layout>
       <div className="homepage">
         <div className="about">
-          <h1 className="title">
+          <div className="title">
             <About />
-          </h1>
+          </div>
         </div>
         <div className="post-grid">
           {post.map(homePosts => (

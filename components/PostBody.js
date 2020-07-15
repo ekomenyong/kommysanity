@@ -2,7 +2,7 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 import BlockContent from '@sanity/block-content-to-react';
-import imageUrlFor from 'lib/imageUrlFor';
+import imageUrlFor from 'components/lib/imageUrlFor';
 
 export default function PostBody({ content }) {
   const serializers = {
@@ -21,8 +21,8 @@ export default function PostBody({ content }) {
         return (
           <div className="post-img">
             <img
-              src={imageUrlFor(asset.url).width(900).height(400).fit('crop').url()}
-              alt="{altText}"
+              src={imageUrlFor(asset.url).width(900).height(500).fit('max').url()}
+              alt={altText}
             />
             <p className="img-caption">{caption}</p>
           </div>
