@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-wrapper">
         <div className="main-footer">
           <nav className="nav-menu">
-            <a className="menu-item" href="mailto:ekom.enyong@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
+            <a className="menu-item" href="mailto:hello@ekomenyong.com" target="_blank" rel="noopener noreferrer">Contact</a>
             <a className="menu-item" href="https://www.twitter.com/EkomEnyong/" target="_blank" rel="noopener noreferrer">Twitter</a>
             <a className="menu-item" href="https://www.linkedin.com/in/ekomenyong/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </nav>

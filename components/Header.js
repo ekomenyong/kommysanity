@@ -11,7 +11,7 @@ export default function Header() {
           </a></Link>
         </div>
         <nav className="nav-menu">
-          <a href="mailto:ekom.enyong@gmail.com" className="menu-item">let's chat.</a>
+          <a href="mailto:hello@ekomenyong.com" className="menu-item">let's chat.</a>
         </nav>
       </div>
       <hr className="header-hr" />
