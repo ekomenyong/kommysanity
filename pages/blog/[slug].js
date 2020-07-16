@@ -34,7 +34,7 @@ export default function Post({ post, preview }) {
               openGraph={{
                 url: `https://ekomenyong.com/blog/${post.slug}`,
                 title: `${post.title} | Ekom Enyong » Digital Creator`,
-                description: `${post.excerpt}`,
+                description: `${post.subtitle}`,
                 images: [
                   {
                     url: `${post.featImage}`,

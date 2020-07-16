@@ -32,7 +32,7 @@ export default function Home({ post }) {
               slug={homePosts.slug}
               category={homePosts.category.name}
               title={homePosts.title}
-              excerpt={homePosts.excerpt}
+              excerpt={homePosts.subtitle}
               date={moment(homePosts.date).format('MMM D, YYYY')}
               imageUrl={homePosts.featImage}
             />
