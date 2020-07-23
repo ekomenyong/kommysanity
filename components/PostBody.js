@@ -21,7 +21,7 @@ export default function PostBody({ content }) {
         return (
           <div className="post-img">
             <img
-              src={imageUrlFor(asset.url).width(900).height(500).fit('max').url()}
+              src={imageUrlFor(asset.url).width(900).height(500).fit('crop').url()}
               alt={altText}
             />
             <p className="img-caption">{caption}</p>
