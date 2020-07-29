@@ -80,7 +80,8 @@ export async function getStaticProps({ params, preview = false }) {
     props: {
       preview,
       post: data
-    }
+    },
+    unstable_revalidate: 1
   };
 }
 
