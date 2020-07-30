@@ -16,9 +16,8 @@
     .menu-item {
       padding-right: 32px;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 18px;
-      color: $white;
+      font-weight: 500;
+      color: $darkAccent;
       transition: 440ms;
       &:hover {
         color: $primaryColor;
@@ -36,13 +35,7 @@
     }
   }
   .copyright .copyright-text {
-    color: $white;
-    a {
-      font-weight: 700;
-    }
-  }
-  .copyright-text {
-    font-size: 18px;
+    color: $darkAccent;
   }
   @include breakpoint("tablet") {
     flex-flow: row nowrap;

@@ -1,11 +1,12 @@
 .post-title-box {
   padding-bottom: 24px;
   .single-post-title {
-    color: $white;
+    color: $darkAccent;
     margin-bottom: 4px;
   }
   .post-subtitle {
     font-size: 24px;
+    color: #555;
   }
 }
 .post-info {
@@ -21,11 +22,11 @@
     align-items: center;
     .author-byline {
       font-size: 18px;
-      color: $white;
+      color: $darkAccent;
       margin-bottom: 0;
       font-weight: 600;
       .author-name {
-        color: $grey;
+        color: #555;
       }
     }
     .author-img img {
@@ -40,7 +41,7 @@
   font-weight: 600;
   font-size: 16px;
   padding-right: 24px;
-  color: $white;
+  color: $darkAccent;
   &.sp {
     font-size: 18px;
     text-transform: capitalize;
@@ -69,7 +70,7 @@
       padding: 8px 24px;
       font-weight: 600;
       font-family: monospace;
-      background: $white;
+      background: #f7f7f7;
       color: $darkAccent;
       border-radius: 0 0 $radius-small $radius-small;
       margin-bottom: 24px;
@@ -85,7 +86,7 @@
         height: auto;
       }
       .img-caption {
-        color: $white;
+        color: #555;
         font-size: 16px;
         text-align: center;
         padding: 8px 16px;

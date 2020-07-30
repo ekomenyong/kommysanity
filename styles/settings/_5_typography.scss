@@ -1,12 +1,12 @@
 // Default Font Family
-$fontBody: neue-haas-grotesk-display, sans-serif;
-$fontHeading: neue-haas-grotesk-display, sans-serif;
+$fontBody: "Inter", sans-serif;
+$fontHeading: "Inter", sans-serif;
 
 // Links
 $linkColor: $primaryColor !default;
-$linkColor-hover: $white !default;
+$linkColor-hover: #555 !default;
 
-$textColor: $grey;
+$textColor: $darkAccent;
 $textColor-light: $grey;
 
 // Headings
@@ -21,7 +21,7 @@ h6 {
   padding: 0;
   font-weight: 700;
   font-family: $fontHeading;
-  color: $white;
+  color: $darkAccent;
 }
 
 h1 {
