@@ -88,6 +88,9 @@
           margin-bottom: 8px;
           text-decoration: none;
         }
+        .excerpt {
+          font-weight: 400;
+        }
       }
     }
     @include breakpoint("tablet") {

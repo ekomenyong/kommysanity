@@ -1,11 +1,10 @@
 .post-title-box {
-  padding-bottom: 24px;
+  padding-bottom: 8px;
   .single-post-title {
     color: $darkAccent;
-    margin-bottom: 4px;
   }
   .post-subtitle {
-    font-size: 24px;
+    font-size: 20px;
     color: #555;
   }
 }
@@ -20,8 +19,9 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+
     .author-byline {
-      font-size: 18px;
+      font-size: 16px;
       color: $darkAccent;
       margin-bottom: 0;
       font-weight: 600;
@@ -39,26 +39,23 @@
   display: inline-block;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 16px;
   padding-right: 24px;
   color: $darkAccent;
   &.sp {
-    font-size: 18px;
     text-transform: capitalize;
   }
 }
 .post-category {
   color: $primaryColor;
   font-weight: 600;
-  font-size: 18px;
   text-transform: uppercase;
+  padding-bottom: 24px;
 }
 .content.container {
   .post-content {
     p,
     li {
-      font-size: 22px;
-      font-weight: 500;
+      font-size: 18px;
       line-height: 1.5;
     }
     .post-code {
