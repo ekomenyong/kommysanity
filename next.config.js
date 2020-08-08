@@ -5,7 +5,6 @@ module.exports = {
   },
   async rewrites() {
     return [
-      // check if Next.js project routes match before we attempt proxying
       {
         source: '/sitemap.xml',
         destination: '/_next/public/sitemap.xml'
@@ -15,6 +14,7 @@ module.exports = {
         destination: `/_next/public/feed.json`
       }
     ];
-  }
+  },
+  trailingSlash: true,
 };
 
