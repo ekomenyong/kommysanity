@@ -26,8 +26,8 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://ekomenyong.com/blog/core-web-vitals-understanding-lcp-fid-and-clp/</loc>
-    <lastmod>2020-07-30T16:04:51+00:00</lastmod>
+    <loc>https://ekomenyong.com/blog/core-web-vitals-understanding-lcp-fid-and-cls/</loc>
+    <lastmod>2020-08-30T16:04:51+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
