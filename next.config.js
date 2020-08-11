@@ -16,5 +16,9 @@ module.exports = {
     ];
   },
   trailingSlash: true,
+  experimental: {
+    optimizeFonts: true,
+    optimizeImages: true
+  },
 };
 
