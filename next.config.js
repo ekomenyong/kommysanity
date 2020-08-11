@@ -6,13 +6,9 @@ module.exports = {
   async rewrites() {
     return [
       {
-        source: '/sitemap.xml',
-        destination: '/_next/public/sitemap.xml'
+        source: "/sitemap.xml",
+        destination: "/api/sitemap",
       },
-      {
-        source: '/feed.json',
-        destination: `/_next/public/feed.json`
-      }
     ];
   },
   trailingSlash: true,
