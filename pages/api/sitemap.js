@@ -22,7 +22,7 @@ export default async (req, res) => {
   // add all dynamic url to the sitemap which is fetched from a source.
   data.forEach((post) => {
     smStream.write({
-      url: `/${post.slug}`,
+      url: `/blog/${post.slug}`,
       lastmod: post._updatedAt,
     });
   });
