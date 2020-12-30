@@ -1,7 +1,10 @@
 .site-layout {
   margin: 0 auto;
-  padding: 0;
-  width: 90%;
+  padding: 0 16px;
+  width: 100%;
+  @include breakpoint("desktop") {
+    max-width: 1100px;
+  }
   .homepage {
     display: flex;
     flex-direction: column;
@@ -18,11 +21,11 @@
     .about {
       position: relative;
       .page-title {
-        font-size: 48px;
+        font-size: 40px;
         color: $darkAccent;
         font-weight: 800;
         @include breakpoint("tablet") {
-          font-size: 72px;
+          font-size: 56px;
         }
       }
       .description {
@@ -31,7 +34,6 @@
         line-height: 1.5;
         @include breakpoint("tablet") {
           max-width: 85%;
-          font-size: 20px;
         }
       }
       @include breakpoint("tablet") {
@@ -53,6 +55,9 @@
         margin: 8px 0;
         width: 100%;
         transition: $speed;
+        @include breakpoint("desktop") {
+          width: 500px;
+        }
         &:hover {
           transform: scale(1.1);
           cursor: pointer;
@@ -83,7 +88,7 @@
           font-weight: 600;
         }
         .post-title {
-          font-size: 32px;
+          font-size: 28px;
           line-height: 32px;
           margin-bottom: 8px;
           text-decoration: none;
