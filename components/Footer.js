@@ -28,7 +28,7 @@ export default function Footer() {
               <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a>
               .
             </p>
-            <p className="copyright-text">© 2020 All Rights Reserved.</p>
+            <p className="copyright-text">©2021 All Rights Reserved.</p>
           </div>
         </div>
       </div>
